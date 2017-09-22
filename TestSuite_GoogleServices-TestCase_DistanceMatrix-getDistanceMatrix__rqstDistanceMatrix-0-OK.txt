@@ -1,0 +1,78 @@
+Status: OK
+Time Taken: 935
+Size: 890
+Timestamp: Fri Sep 22 15:15:06 EDT 2017
+TestStep: getDistanceMatrix - rqstDistanceMatrix
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://maps.googleapis.com
+Method: GET
+StatusCode: 200
+URL: https://maps.googleapis.com/maps/api/distancematrix/json?origins=Cincinnati%20OH%7CCleveland%20OH&destinations=Atlanga%20GA&key=AIzaSyAeKMoTEyLw0bHhXH21yGtWqu3OSnszEV4
+
+---------------- Request ---------------------------
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/1.8.0_131)]
+Host: [maps.googleapis.com]
+Accept-Encoding: [gzip,deflate]
+
+GET https://maps.googleapis.com/maps/api/distancematrix/json?origins=Cincinnati%20OH%7CCleveland%20OH&destinations=Atlanga%20GA&key=AIzaSyAeKMoTEyLw0bHhXH21yGtWqu3OSnszEV4 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: maps.googleapis.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_131)
+
+
+---------------- Response --------------------------
+X-Frame-Options: [SAMEORIGIN]
+Cache-Control: [public, max-age=86400]
+Server: [mafe]
+Alt-Svc: [quic=":443"; ma=2592000; v="39,38,37,35"]
+Vary: [Accept-Language]
+Expires: [Sat, 23 Sep 2017 19:15:07 GMT]
+#status#: [HTTP/1.1 200 OK]
+X-XSS-Protection: [1; mode=block]
+Date: [Fri, 22 Sep 2017 19:15:07 GMT]
+Content-Type: [application/json; charset=UTF-8]
+
+{
+   "destination_addresses" : [ "Atlanta, GA, USA" ],
+   "origin_addresses" : [ "Cincinnati, OH, USA", "Cleveland, OH, USA" ],
+   "rows" : [
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "742 km",
+                  "value" : 741744
+               },
+               "duration" : {
+                  "text" : "6 hours 46 mins",
+                  "value" : 24351
+               },
+               "status" : "OK"
+            }
+         ]
+      },
+      {
+         "elements" : [
+            {
+               "distance" : {
+                  "text" : "1,141 km",
+                  "value" : 1141494
+               },
+               "duration" : {
+                  "text" : "10 hours 25 mins",
+                  "value" : 37472
+               },
+               "status" : "OK"
+            }
+         ]
+      }
+   ],
+   "status" : "OK"
+}
+
